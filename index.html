@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Pallavi 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PAGE 1 -->
+    <section class="page active" id="page1">
+
+        <div class="sparkle sparkle1">✨</div>
+        <div class="sparkle sparkle2">✨</div>
+
+        <div class="bears">
+            <div class="bear">🐻</div>
+            <div class="cake">🎂</div>
+            <div class="bear">🐻</div>
+        </div>
+
+        <p class="small-title">A LITTLE SURPRISE FOR YOU 🎀</p>
+
+        <h1>Happy Birthday Pallavi 💗</h1>
+
+        <p class="question">
+            Are you excited for what's next? 👀
+        </p>
+
+        <div class="buttons">
+            <button class="yes-btn" onclick="goToPage2()">
+                YES 💗
+            </button>
+
+            <button class="no-btn" id="noButton" onclick="moveNoButton()">
+                NO 😭
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 2 -->
+    <section class="page" id="page2">
+
+        <p class="small-title">A LITTLE GAME 🎈</p>
+
+        <h1>Pop all 4 balloons!</h1>
+
+        <p class="subtitle">
+            Let's see what each balloon has to say 💗
+        </p>
+
+        <div class="balloon-area">
+
+            <div class="balloon-box">
+                <div class="balloon balloon1" onclick="popBalloon(1)">
+                    <span>?</span>
+                </div>
+                <div class="string"></div>
+                <div class="balloon-word" id="word1"></div>
+            </div>
+
+            <div class="balloon-box">
+                <div class="balloon balloon2" onclick="popBalloon(2)">
+                    <span>?</span>
+                </div>
+                <div class="string"></div>
+                <div class="balloon-word" id="word2"></div>
+            </div>
+
+            <div class="balloon-box">
+                <div class="balloon balloon3" onclick="popBalloon(3)">
+                    <span>?</span>
+                </div>
+                <div class="string"></div>
+                <div class="balloon-word" id="word3"></div>
+            </div>
+
+            <div class="balloon-box">
+                <div class="balloon balloon4" onclick="popBalloon(4)">
+                    <span>?</span>
+                </div>
+                <div class="string"></div>
+                <div class="balloon-word" id="word4"></div>
+            </div>
+
+        </div>
+
+        <h2 id="specialMessage"></h2>
+
+        <button
+            class="continue-btn"
+            id="continueButton"
+            onclick="goToPage3()">
+            Continue 💗
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 3 -->
+    <section class="page" id="page3">
+
+        <p class="small-title">ONE MORE THING 🎂</p>
+
+        <h1>Blow the candle, Pallavi 🕯️</h1>
+
+        <p class="subtitle" id="wishInstruction">
+            Tap the candle to blow it out 💨
+        </p>
+
+        <div class="cake-container" onclick="blowCandle()">
+
+            <div class="flame" id="flame">
+                🔥
+            </div>
+
+            <div class="candle">
+                🕯️
+            </div>
+
+            <div class="cake-main">
+                <div class="cake-top"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-bottom"></div>
+            </div>
+
+        </div>
+
+        <div class="dots">
+            • • • • •
+        </div>
+
+        <h2 id="wishHeading">
+            Make a wish ✨
+        </h2>
+
+        <p class="subtitle">
+            Tap the candle 💗
+        </p>
+
+        <!-- THIS BUTTON IS NOW VISIBLE -->
+        <button
+            class="page3-continue"
+            onclick="goToPage4()">
+            Continue 🌸
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 4 -->
+    <section class="page" id="page4">
+
+        <div class="flower-sparkle sparkle-flower1">✨</div>
+        <div class="flower-sparkle sparkle-flower2">✨</div>
+
+        <p class="small-title">
+            JUST FOR YOU 🌻
+        </p>
+
+        <h1 class="darling-heading">
+            For you, my darling 💛
+        </h1>
+
+        <div class="bouquet">
+
+            <!-- LEFT SUNFLOWER -->
+            <div class="flower flower-left">
+
+                <div class="petals">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                </div>
+
+                <div class="flower-center">
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SUNFLOWER -->
+            <div class="flower flower-right">
+
+                <div class="petals">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                </div>
+
+                <div class="flower-center">
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                </div>
+
+            </div>
+
+            <div class="stem stem-left"></div>
+            <div class="stem stem-right"></div>
+
+            <div class="leaf leaf-left"></div>
+            <div class="leaf leaf-right"></div>
+            <div class="leaf leaf-middle"></div>
+
+            <div class="bouquet-wrap">
+                <div class="wrap-fold fold-left"></div>
+                <div class="wrap-fold fold-right"></div>
+            </div>
+
+            <div class="ribbon">
+                <div class="ribbon-left"></div>
+                <div class="ribbon-right"></div>
+                <div class="ribbon-knot"></div>
+            </div>
+
+        </div>
+
+        <p class="flower-message">
+            A little sunshine,<br>
+            wrapped especially for you. 💛
+        </p>
+
+        <button
+            class="sunflower-button"
+            onclick="goToPage5()">
+            Continue 💗
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 5 -->
+    <section class="page letter-page" id="page5">
+
+        <div class="letter-sparkle sparkle-letter1">✨</div>
+        <div class="letter-sparkle sparkle-letter2">💗</div>
+
+        <p class="small-title">
+            ONE LAST THING FOR YOU 💌
+        </p>
+
+        <h1 class="letter-heading">
+            I have something to tell you...
+        </h1>
+
+        <p class="letter-subtitle">
+            Open this when you're ready 💗
+        </p>
+
+        <div class="big-letter" onclick="openLetter()">
+
+            <div class="letter-glow"></div>
+
+            <div class="letter-emoji">
+                💌
+            </div>
+
+            <div class="click-hand">
+                👆
+            </div>
+
+        </div>
+
+        <p class="click-letter-text">
+            Tap the letter 💗
+        </p>
+
+    </section>
+
+
+    <!-- PAGE 6 -->
+    <section class="page message-page" id="page6">
+
+        <div class="message-background-heart">
+            💗
+        </div>
+
+        <p class="small-title">
+            MY LAST LETTER TO YOU 💌
+        </p>
+
+        <div class="opened-letter">
+
+            <div class="letter-top">
+                <span>💌</span>
+
+                <h1>
+                    To my favourite one,
+                </h1>
+            </div>
+
+            <div class="personal-message">
+
+                <p>
+                    Happy birthday my darling muahhhhh 💋
+                </p>
+
+                <p>
+                    I love you more than I even know how to
+                    express in words, but I'm going to try my best.
+                </p>
+
+                <p>
+                    People come and go but You're somebody
+                    that I know I can always count on to be
+                    there for me no matter what, and I will
+                    also be there for you.
+                </p>
+
+                <p class="special-line">
+                    Nuvu untey chaleyyy 😂
+                </p>
+
+                <p>
+                    Just what to tell you that love you soooo
+                    much and once again happy birthday darling
+                    🫶🏻💋
+                </p>
+
+                <p class="letter-ending">
+                    With all my love,<br>
+                    🫶🏻💋
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="end-text">
+
+            <h2>
+                Happy Birthday once again, darling! 🎂💗
+            </h2>
+
+            <p>
+                The End 🌸
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
